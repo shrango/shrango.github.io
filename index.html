@@ -21,7 +21,7 @@
               <p style="text-align:center">
                 <name>Langlin Huang | 黄浪林</name>
               </p>
-              <p>I am a first-year PhD student at Washington University in St. Louis (<a href="https://wustl.edu/">WUSTL</a>), luckily advised by Prof. <a href="https://teapot123.github.io/">Jiaxin Huang</a>. </p>
+              <p>I am a second-year PhD student at Washington University in St. Louis (<a href="https://wustl.edu/">WUSTL</a>), luckily advised by Prof. <a href="https://teapot123.github.io/">Jiaxin Huang</a>. </p>
 
               <p>Before that, I received my Master degree at Institute of Computing Technology, Chinese Academy of Sciences (<a href="http://www.ict.ac.cn/">ICT/CAS</a>) in Jul. 2024, where I studied at ICT Natural Language Processing (<a href="http://nlp.ict.ac.cn/">ICTNLP</a>) group. I received my B.E. degree in Data Science and Big Data Technology from University of International Business and Economics (<a href="https://www.uibe.edu.cn/">UIBE</a>) in Jun. 2021.</p>
               <p>
@@ -62,10 +62,12 @@
                 My research interests mainly lie in Natural Language Processing and Large Language Models. Particularly, I am interested in: 
                 <ul>
                   <li>
-                    Efficient language model generation. Efficient in-context learning.
+                    Large Language Model Reasoning.
+                  <li>
+                    Efficient language model generation, Speculative Decoding, Efficient in-context learning.
                   </li>
                   <li>
-                    Multilingual large language model. Machine Translation.
+                    Multilingual large language model, Machine Translation.
                   </li>
                 </ul>
                 
@@ -78,14 +80,20 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
-                <p>[2024/08] My new journey set sail, I will focus on a wide variety of LLM generation-related topics. I will also track the up-to-date research about machine translation and tokenization.
-                <p>[2024/06] One paper about multi-scale contextualization and UTF-8 byte-based model is accepted to <strong>ACL 2024</strong>! Thanks to all collaborators!</p>
+                <p>[2025/07] Our <a href="https://arxiv.org/abs/2504.00043">CrossWordBench</a> is accepted by <strong>COLM 2025</strong>. Thanks to all collaborators!</p>
+                <p>[2025/06] We released <a href="https://arxiv.org/abs/2506.03566">PosS</a>, an effective Speculative Decoding method that reaches the highest draft predicton accuracy.</p>
+                <p>[2025/04] We released <a href="https://arxiv.org/abs/2504.00043">CrossWordBench</a>, a challenging multimodal Benchmark that requires continuous reasoning ability.</p>
+                <p>[2025/02] One paper about <a href="https://aclanthology.org/2025.naacl-long.47/">Adaptive Heterogeneous MoE for flexible tokenization</a> is accepted by <strong>NAACL 2025</strong> as oral representation. Thanks to all collaborators!</p>
+                <p>[2025/02] We released <a href="https://arxiv.org/abs/2503.00031">Efficient Test-Time Scaling via Self-Calibration</a>, finding self-calibration efficiently improves test-time scaling method which saves up to 94% sampling.</p>
+                <p>[2024/10] We released <a href="https://arxiv.org/abs/2410.10074/">LARA</a>, A logit aggregation approach for In-Context Learning!</p>
+                <p>[2024/08] My new journey set sail on Washington University in St. Louis, I love the peaceful campus and welcoming people!</p>
+                <p>[2024/06] One paper about <a href="https://aclanthology.org/2024.findings-acl.583/">Byte-based Language Model</a> is accepted to <strong>ACL 2024</strong>! Thanks to all collaborators!</p>
                 <p>[2024/05/21] <strong>I successfully defended my dissertation for Master degree!</strong> 
                   My dissertation name is "A Study of Neural Machine Translation on Multiple Semantic Granularities (基于多语义粒度的神经机器翻译研究)".
                 </p>
-                <p>[2023/10] One paper about semantic-level sentence representation is accepted to <strong>EMNLP 2023</strong>! Thanks to all collaborators!</p>
+                <p>[2023/10] One paper about <a href="https://aclanthology.org/2023.findings-emnlp.149/">Compositional Phrase Representation</a>is accepted to <strong>EMNLP 2023</strong>! Thanks to all collaborators!</p>
                 <p>[2023/06] Our LLM <strong>BayLing (百聆)</strong> is released! BayLing is an instruction-following LLM with advanced language alignment and multi-turn interaction capability. Read our <a href="https://arxiv.org/abs/2306.10968">paper</a> and try our <a href="http://nlp.ict.ac.cn/bayling/demo/">online demo</a>! Thanks to all collaborators! </p>
-                <p>[2022/12] One patent about improving label smoothing in training translation models is published! Check the report <a href="http://epub.cnipa.gov.cn/patent/CN115455993A">here</a>. </p>
+                <!-- <p>[2022/12] One patent about improving label smoothing in training translation models is published! Check the report <a href="http://epub.cnipa.gov.cn/patent/CN115455993A">here</a>. </p> -->
                 <p>[2022/07] We won <strong>first place</strong> in the Chinese-Thai track and <strong>second place</strong> in the Mongolian-Chinese track in the 18th China Conference on Machine Translation (CCMT 2022)! Thanks to all collaborators! The technical report is accessible to public, check <a href="http://sc.cipsc.org.cn/mt/conference/2022/papers/test_paper/60/60_Paper.pdf">here</a> for Chinese-Thai track and <a href="http://sc.cipsc.org.cn/mt/conference/2022/papers/test_paper/54/54_Paper.pdf">here</a> for Mongolian-Chinese track.</p>
                 <p>[2021/09] I start my M.S. life at University of Chinese Academy of Sciences (<a href="https://www.ucas.ac.cn/">UCAS</a>).</p>
                 <p>[2021/06] I obtain my B.E. degree from University of International Business and Economics (<a href="https://www.uibe.edu.cn/">UIBE</a>).</p>
@@ -101,7 +109,57 @@
                 <heading>Publications</heading><br>
 
                 <br>
-                <subheading>2024</subheading>
+                <subheading>LLM Reasoning</subheading>
+                <br>
+
+                <br>
+                  <papertitle>POSS: Position Specialist Generates Better Draft for Speculative Decoding</papertitle>
+                <br>
+                <strong>Langlin Huang</strong>, Chengsong Huang, Jixuan Leng, Di Huang, Jiaxin Huang
+                <br>
+                  <a href="https://arxiv.org/pdf/2506.03566">Paper</a> / <a href="https://github.com/shrango/PosS">Code</a>
+                <br>
+
+                <br>
+                  <papertitle>CrossWordBench: Evaluating the Reasoning Capabilities of LLMs and LVLMs with Controllable Puzzle Generation</papertitle>
+                <br>
+                Jixuan Leng, Chengsong Huang, <strong>Langlin Huang</strong>, Bill Yuchen Lin, William W. Cohen, Haohan Wang, Jiaxin Huang
+                <br>
+                <font color="#FF0000"><strong>COLM 2025</strong></font>
+                <!-- <em>COLM 2025</em> -->
+                <br>
+                  <a href="https://arxiv.org/pdf/2504.00043">Paper</a> / <a href="https://github.com/SeanLeng1/CrossWordBench">Code</a> / <a href="https://huggingface.co/datasets/HINT-lab/CrossWordBench">Dataset</a>
+                <br>
+
+                <br>
+                  <papertitle>Efficient Test-Time Scaling via Self-Calibration</papertitle>
+                <br>
+                Chengsong Huang, <strong>Langlin Huang</strong>, Jixuan Leng, Jiacheng Liu, Jiaxin Huang
+                <br>
+                  <a href="https://arxiv.org/pdf/2503.00031">Paper</a> / <a href="https://github.com/Chengsong-Huang/Self-Calibration">Code</a>
+                <br>
+
+                <br>
+                  <papertitle>Divide, Reweight, and Conquer: A Logit Arithmetic Approach for In-Context Learning</papertitle>
+                <br>
+                Chengsong Huang, <strong>Langlin Huang</strong>, Jiaxin Huang
+                <br>
+                  <a href="https://arxiv.org/pdf/2410.10074">Paper</a> / <a href="https://github.com/Chengsong-Huang/LARA">Code</a>
+                <br>
+
+                <br>
+                <subheading>Multilingual</subheading>
+                <br>
+
+                <br>
+                  <papertitle>MoCE: Adaptive Mixture of Contextualization Experts for Byte-based Neural Machine Translation</papertitle>
+                <br>
+                <strong>Langlin Huang</strong>, Mengyu Bu, Yang Feng
+                <br>
+                <font color="#FF0000"><strong>NAACL 2025 (oral)</strong></font>
+                <!-- <em>NAACL 2025 (oral)</em> -->
+                <br>
+                <a href="https://aclanthology.org/2025.naacl-long.47/">Paper</a> / <a href="https://github.com/ictnlp/MoCE">Code</a>
                 <br>
 
                 <br>
@@ -109,13 +167,10 @@
                 <br>
                 <strong>Langling Huang</strong>, Yang Feng
                 <br>
-                <em>ACL 2024</em> (<font color="#FF0000"><strong>CCF-A</strong></font>)
+                <font color="#FF0000"><strong>ACL 2024</strong></font>
+                <!-- <em>ACL 2024</em> -->
                 <br>
                 <a href="https://arxiv.org/html/2405.19290v1">Paper</a> / <a href="https://github.com/ictnlp/Multiscale-Contextualization">Code</a>
-                <br>
-
-                <br>
-                <subheading>2023</subheading>
                 <br>
 
                 <br>
@@ -123,13 +178,22 @@
                 <br>
                 <strong>Langling Huang</strong>, Shuhao Gu, Zhuocheng Zhang, Yang Feng
                 <br>
-                <em>EMNLP 2023</em> (<font color="#FF0000"><strong>CCF-B</strong></font>)
+                <font color="#FF0000"><strong>EMNLP 2023</strong></font>
+                <!-- <em>EMNLP 2023</em> -->
                 <br>
                 <a href="https://aclanthology.org/2023.findings-emnlp.149/">Paper</a> / <a href="https://github.com/ictnlp/SU4MT">Code</a>
                 <br>
 
                 <br>
-                <subheading>2020</subheading>
+                  <papertitle>BayLing: Bridging Cross-lingual Alignment and Instruction Following through Interactive Translation for Large Language Models</papertitle>
+                <br>
+                Shaolei Zhang, Qingkai Fang, Zhuocheng Zhang, Zhengrui Ma, Yan Zhou, <strong>Langlin Huang</strong>, Mengyu Bu, Shangtong Gui, Yunji Chen, Xilin Chen, Yang Feng
+                <br>
+                <a href="https://arxiv.org/abs/2306.10968">Paper</a> / <a href="https://github.com/ictnlp/BayLing">Code</a> / <a href="http://nlp.ict.ac.cn/bayling/demo/">Demo</a> / <a href="https://nlp.ict.ac.cn/bayling">Project Page</a>
+                <br>
+
+                <br>
+                <subheading>Ohters</subheading>
                 <br>
 
                 <br>
@@ -137,7 +201,7 @@
                 <br>
                 Genghao Li, Bing Li, <strong>Langlin Huang</strong>, Sibing Hou
                 <br>
-                <em>JMIR Medical Informatics</em> (<font color="#FF0000"><strong>SCI</strong></font>)
+                <em>JMIR Medical Informatics</em>
                 <br>
                 <a href="https://medinform.jmir.org/2020/6/e17650">Paper</a>
                 <br>
@@ -145,46 +209,9 @@
                 </td>
             </tr>
         </tbody></table>
-        
-        <!-- preprint -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Preprint</heading><br>
-              <br>
-                <subheading>2024</subheading>
-              <br>
-            
-              <br>
-                <papertitle>Divide, Reweight, and Conquer: A Logit Arithmetic Approach for In-Context Learning</papertitle>
-              <br>
-              Chengsong Huang, <strong>Langlin Huang</strong>, Jiaxin Huang
-              <br>
-              <a href="https://arxiv.org/pdf/2410.10074">Paper</a> / <a href="https://github.com/Chengsong-Huang/LARA">Code</a>
-              <br><br>
-              <br>
-                <papertitle>MoCE: Adaptive Mixture of Contextualization Experts for Byte-based Neural Machine Translation</papertitle>
-              <br>
-              <strong>Langlin Huang</strong>, Mengyu Bu, Yang Feng
-              <br>
-              <a href="https://arxiv.org/pdf/2411.01474">Paper</a> / <a href="https://github.com/ictnlp/MoCE">Code</a>
-              <br><br>
-              <br>
-                <subheading>2023</subheading>
-              <br>
-              <br>
-                <papertitle>BayLing: Bridging Cross-lingual Alignment and Instruction Following through Interactive Translation for Large Language Models</papertitle>
-              <br>
-              Shaolei Zhang, Qingkai Fang, Zhuocheng Zhang, Zhengrui Ma, Yan Zhou, <strong>Langlin Huang</strong>, Mengyu Bu, Shangtong Gui, Yunji Chen, Xilin Chen, Yang Feng
-              <br>
-              <a href="https://arxiv.org/abs/2306.10968">Paper</a> / <a href="https://github.com/ictnlp/BayLing">Code</a> / <a href="http://nlp.ict.ac.cn/bayling/demo/">Demo</a> / <a href="https://nlp.ict.ac.cn/bayling">Project Page</a>
-      
-              </td>
-          </tr>
-      </tbody></table>
 
         <!-- Technical Report -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Technical Report</heading><br>
@@ -211,7 +238,7 @@
               <br>
               </td>
           </tr>
-      </tbody></table>
+      </tbody></table> -->
 
         <!-- awards -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -232,7 +259,7 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Services</heading>
-              <p><strong>Reviewer:</strong> ACL Rolling Review, ACL 2023, TALLIP</p>
+              <p><strong>Reviewer:</strong> NeurIPS 2025, COLM 2025, ICLR 2025, ACL Rolling Review, ACL 2023, TALLIP</p>
             </td>
           </tr>
         </tbody></table>
@@ -245,7 +272,7 @@
                             <br>
                             <br>
                             </p><div style="float:left;">
-                            Updated at Nov. 2024
+                            Updated at Aug. 2025
                             </div>
                             <div style="float:right;">
                             <a href="https://jonbarron.info">Template</a>
